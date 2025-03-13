@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://docs.theairlab.org/docs/develop/robot/ros_ws/src/autonomy/3_local/b_planners/droan_local_planner/">
+        <link rel="canonical" href="https://docs.theairlab.org/docs/develop/docs/robot/autonomy/1_sensors/gimbal/">
       
       
-        <link rel="prev" href="../takeoff_landing_planner/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../../../../../../docs/robot/autonomy/3_local/controls/">
+        <link rel="next" href="../../2_perception/">
       
       
-      <link rel="icon" href="../../../../../../../docs/assets/StackedWhite.png">
+      <link rel="icon" href="../../../../assets/StackedWhite.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
-        <title>DROAN Local Planner - AirStack</title>
+        <title>Gimbal Extension - AirStack</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#droan-local-planner" class="md-skip">
+        <a href="#gimbal-extension" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../../../../.." title="AirStack" class="md-header__button md-logo" aria-label="AirStack" data-md-component="logo">
+    <a href="../../../../.." title="AirStack" class="md-header__button md-logo" aria-label="AirStack" data-md-component="logo">
       
-  <img src="../../../../../../../docs/assets/logo_horizontal_white.png" alt="logo">
+  <img src="../../../../assets/logo_horizontal_white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DROAN Local Planner
+              Gimbal Extension
             
           </span>
         </div>
@@ -222,7 +222,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../../../../docs/" class="md-tabs__link">
+      <a href="../../../../" class="md-tabs__link">
         
   
     
@@ -239,7 +239,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../../../../docs/getting_started/" class="md-tabs__link">
+      <a href="../../../../getting_started/" class="md-tabs__link">
         
   
     
@@ -258,7 +258,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../../docs/development/" class="md-tabs__link">
+        <a href="../../../../development/" class="md-tabs__link">
           
   
     
@@ -280,7 +280,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../../../../docs/robot/" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -300,7 +300,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../../docs/ground_control_station/" class="md-tabs__link">
+        <a href="../../../../ground_control_station/" class="md-tabs__link">
           
   
     
@@ -320,7 +320,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../../docs/simulation/" class="md-tabs__link">
+        <a href="../../../../simulation/" class="md-tabs__link">
           
   
     
@@ -340,7 +340,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../../docs/real_world/" class="md-tabs__link">
+        <a href="../../../../real_world/" class="md-tabs__link">
           
   
     
@@ -358,7 +358,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../../../../docs/about/" class="md-tabs__link">
+      <a href="../../../../about/" class="md-tabs__link">
         
   
     
@@ -394,9 +394,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../../../.." title="AirStack" class="md-nav__button md-logo" aria-label="AirStack" data-md-component="logo">
+    <a href="../../../../.." title="AirStack" class="md-nav__button md-logo" aria-label="AirStack" data-md-component="logo">
       
-  <img src="../../../../../../../docs/assets/logo_horizontal_white.png" alt="logo">
+  <img src="../../../../assets/logo_horizontal_white.png" alt="logo">
 
     </a>
     AirStack
@@ -423,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/" class="md-nav__link">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/getting_started/" class="md-nav__link">
+      <a href="../../../../getting_started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -502,7 +502,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/development/" class="md-nav__link ">
+            <a href="../../../../development/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -536,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/docker_usage/" class="md-nav__link">
+      <a href="../../../../development/docker_usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -558,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/vscode/" class="md-nav__link">
+      <a href="../../../../development/vscode/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/project_configuration/" class="md-nav__link">
+      <a href="../../../../development/project_configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,7 +635,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/development/testing/" class="md-nav__link ">
+            <a href="../../../../development/testing/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -669,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/testing/testing_frameworks/" class="md-nav__link">
+      <a href="../../../../development/testing/testing_frameworks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -691,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/testing/integration_testing/" class="md-nav__link">
+      <a href="../../../../development/testing/integration_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -713,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/testing/unit_testing/" class="md-nav__link">
+      <a href="../../../../development/testing/unit_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/testing/system_testing/" class="md-nav__link">
+      <a href="../../../../development/testing/system_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -757,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/testing/ci_cd/" class="md-nav__link">
+      <a href="../../../../development/testing/ci_cd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -787,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/contributing/" class="md-nav__link">
+      <a href="../../../../development/contributing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -809,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/development/frame_conventions/" class="md-nav__link">
+      <a href="../../../../development/frame_conventions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +872,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -989,7 +989,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/0_interface/" class="md-nav__link ">
+            <a href="../../0_interface/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1023,6 +1023,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1042,16 +1044,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/1_sensors/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1069,7 +1071,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2_2">
             <span class="md-nav__icon md-icon"></span>
             Sensors
@@ -1082,10 +1084,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../../../docs/robot/autonomy/1_sensors/gimbal/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gimbal Extension
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1095,6 +1118,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-and-activation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation and Activation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-gimbal-to-a-drone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Gimbal to a Drone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gimbal-camera-image-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gimbal Camera Image Topic
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-the-gimbal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controlling the Gimbal
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1140,7 +1228,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/2_perception/" class="md-nav__link ">
+            <a href="../../2_perception/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1174,7 +1262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/robot/autonomy/2_perception/state_estimation/" class="md-nav__link">
+      <a href="../../2_perception/state_estimation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1201,8 +1289,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1226,16 +1312,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/3_local/" class="md-nav__link ">
+            <a href="../../3_local/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1253,7 +1339,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2_4">
             <span class="md-nav__icon md-icon"></span>
             Local
@@ -1294,7 +1380,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/3_local/world_model/" class="md-nav__link ">
+            <a href="../../3_local/world_model/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1359,7 +1445,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../a_world_models/disparity_expansion/" class="md-nav__link ">
+            <a href="../../../../../robot/ros_ws/src/autonomy/3_local/a_world_models/disparity_expansion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1393,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../a_world_models/disparity_graph/" class="md-nav__link">
+      <a href="../../../../../robot/ros_ws/src/autonomy/3_local/a_world_models/disparity_graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1415,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../a_world_models/disparity_graph_cost_map/" class="md-nav__link">
+      <a href="../../../../../robot/ros_ws/src/autonomy/3_local/a_world_models/disparity_graph_cost_map/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1450,8 +1536,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1479,16 +1563,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/3_local/planning/" class="md-nav__link ">
+            <a href="../../3_local/planning/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1506,7 +1590,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2_4_3">
             <span class="md-nav__icon md-icon"></span>
             Planning
@@ -1522,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../trajectory_library/" class="md-nav__link">
+      <a href="../../../../../robot/ros_ws/src/autonomy/3_local/b_planners/trajectory_library/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1544,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../takeoff_landing_planner/" class="md-nav__link">
+      <a href="../../../../../robot/ros_ws/src/autonomy/3_local/b_planners/takeoff_landing_planner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1563,8 +1647,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1582,16 +1664,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4_3_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4_3_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../../../../robot/ros_ws/src/autonomy/3_local/b_planners/droan_local_planner/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1604,7 +1686,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_2_4_3_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_2_4_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2_4_3_4">
             <span class="md-nav__icon md-icon"></span>
             DROAN (Obstacle Avoidance Planner)
@@ -1663,7 +1745,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/3_local/controls/" class="md-nav__link ">
+            <a href="../../3_local/controls/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1697,7 +1779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../c_controls/trajectory_controller/" class="md-nav__link">
+      <a href="../../../../../robot/ros_ws/src/autonomy/3_local/c_controls/trajectory_controller/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1762,7 +1844,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/4_global/" class="md-nav__link ">
+            <a href="../../4_global/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1821,7 +1903,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/4_global/world_model/" class="md-nav__link ">
+            <a href="../../4_global/world_model/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1855,7 +1937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4_global/a_world_models/vdb_mapping_ros2/README.md" class="md-nav__link">
+      <a href="../../../../../robot/ros_ws/src/autonomy/4_global/a_world_models/vdb_mapping_ros2/README.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1912,7 +1994,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/4_global/planning/" class="md-nav__link ">
+            <a href="../../4_global/planning/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1946,7 +2028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4_global/b_planners/random_walk/" class="md-nav__link">
+      <a href="../../../../../robot/ros_ws/src/autonomy/4_global/b_planners/random_walk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2011,7 +2093,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/autonomy/5_behavior/" class="md-nav__link ">
+            <a href="../../5_behavior/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2045,7 +2127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/robot/autonomy/5_behavior/behavior_tree/" class="md-nav__link">
+      <a href="../../5_behavior/behavior_tree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2067,7 +2149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/robot/autonomy/5_behavior/behavior_executive/" class="md-nav__link">
+      <a href="../../5_behavior/behavior_executive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2131,7 +2213,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/static_transforms/" class="md-nav__link ">
+            <a href="../../../static_transforms/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2194,7 +2276,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/robot/logging/" class="md-nav__link ">
+            <a href="../../../logging/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2265,7 +2347,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/ground_control_station/" class="md-nav__link ">
+            <a href="../../../../ground_control_station/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2344,7 +2426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/ground_control_station/usage/user_interface/" class="md-nav__link">
+      <a href="../../../../ground_control_station/usage/user_interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2419,7 +2501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/ground_control_station/multi_robot/multi_robot/" class="md-nav__link">
+      <a href="../../../../ground_control_station/multi_robot/multi_robot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2481,7 +2563,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/simulation/" class="md-nav__link ">
+            <a href="../../../../simulation/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2544,7 +2626,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/simulation/isaac_sim/" class="md-nav__link ">
+            <a href="../../../../simulation/isaac_sim/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2578,7 +2660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/simulation/isaac_sim/export_stages_from_unreal/" class="md-nav__link">
+      <a href="../../../../simulation/isaac_sim/export_stages_from_unreal/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2600,7 +2682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/simulation/isaac_sim/scene_setup/" class="md-nav__link">
+      <a href="../../../../simulation/isaac_sim/scene_setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2622,7 +2704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/simulation/isaac_sim/ascent_sitl_extension/" class="md-nav__link">
+      <a href="../../../../simulation/isaac_sim/ascent_sitl_extension/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2684,7 +2766,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/real_world/" class="md-nav__link ">
+            <a href="../../../../real_world/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2741,7 +2823,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../../../../docs/real_world/installation/" class="md-nav__link ">
+            <a href="../../../../real_world/installation/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2785,7 +2867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../../docs/about/" class="md-nav__link">
+      <a href="../../../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2818,19 +2900,33 @@
   
 
 
-<h1 id="droan-local-planner">DROAN Local Planner<a class="headerlink" href="#droan-local-planner" title="Permanent link">&para;</a></h1>
-<p>This is part of a set of packages that performs local obstacle avoidance from stereo depth. The method is based on the publication <a href="https://www.ri.cmu.edu/app/uploads/2018/01/root.pdf">"DROAN - Disparity-space representation for obstacle avoidance."</a>. Essentially, the local world model makes a C-space expansion around detected obstacles in the disparity image. The local planner then plans a path by scoring the best trajectory from a trajectory library in this expanded space.</p>
-<p>The packages are</p>
+<h1 id="gimbal-extension"><strong>Gimbal Extension</strong><a class="headerlink" href="#gimbal-extension" title="Permanent link">&para;</a></h1>
+<h2 id="overview"><strong>Overview</strong><a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The <strong>Gimbal Extension</strong> provides an easy way to integrate a controllable gimbal into an existing drone model within the scene. This extension is designed to facilitate the attachment and operation of a camera-equipped gimbal, allowing for real-time adjustments to pitch and yaw angles via ROS 2 messages.</p>
+<h2 id="installation-and-activation"><strong>Installation and Activation</strong><a class="headerlink" href="#installation-and-activation" title="Permanent link">&para;</a></h2>
+<p>To enable the <strong>Gimbal Extension</strong>, follow these steps:</p>
 <ol>
-<li><a href="../../a_world_models/disparity_expansion/">disparity_expansion</a>   (takes in stereo disparity and expands it to a 3D point cloud)</li>
-<li><a href="../../a_world_models/disparity_graph/">disparity_graph</a>        (creates a graph where each node is a drone pose and 3D point cloud observation)</li>
-<li><a href="../../a_world_models/disparity_graph_cost_map/">disparity_graph_cost_map</a>  (creates a cost map from the disparity graph)</li>
-<li>droan_local_planner  (this package. uses the cost map to plan a path)</li>
+<li>Open the <strong>Extensions</strong> window by navigating to:<br />
+<strong>Window</strong> → <strong>Extensions</strong></li>
+<li>Under the <strong>THIRD PARTIES</strong> section, go to the <strong>User</strong> tab.</li>
+<li>Locate the <strong>Gimbal Extension</strong> and turn it on.</li>
+<li>Once enabled, a new <strong>Gimbal Extension</strong> window should appear.</li>
 </ol>
-<p>DROAN local planner takes the global plan, and finds the global plan's closest point to the drone.
-DROAN trims the global plan to be from that point to the end of the global plan.</p>
-<p>Consequently, DROAN currently does NOT use a waypoint manager, and is NOT guaranteed to reach every waypoint on the global plan, especially if the global plan loops back on itself.
-Ideally in the future we will use a proper waypoint manager.</p>
+<h2 id="adding-a-gimbal-to-a-drone"><strong>Adding a Gimbal to a Drone</strong><a class="headerlink" href="#adding-a-gimbal-to-a-drone" title="Permanent link">&para;</a></h2>
+<p>To attach a gimbal to an existing UAV model:</p>
+<ol>
+<li>Copy the <strong>prim path</strong> of the UAV to which you want to add the gimbal.</li>
+<li>In the <strong>Gimbal Extension</strong> window, paste the copied path into the <strong>Robot Prim Path</strong> text box.</li>
+<li>Set the <strong>Robot Index</strong> based on the <code>DOMAIN_ID</code> of the drone.  </li>
+<li>The <code>DOMAIN_ID</code> should match the identifier used for the robot to ensure proper communication.</li>
+</ol>
+<p>For a step-by-step demonstration, refer to the video tutorial below:</p>
+<iframe src="https://drive.google.com/file/d/1pN0Pxe4nYQL1qs40oZTDqsOXsMrApLPM/preview" width="840" height="480" allow="autoplay" allowfullscreen="allowfullscreen"></iframe>
+
+<h2 id="gimbal-camera-image-topic"><strong>Gimbal Camera Image Topic</strong><a class="headerlink" href="#gimbal-camera-image-topic" title="Permanent link">&para;</a></h2>
+<p>Once the gimbal is successfully added, the camera image feed from the gimbal will be published on the following ROS 2 topic: <code>/robot_&lt;ID&gt;/gimbal/rgb</code>.</p>
+<h2 id="controlling-the-gimbal"><strong>Controlling the Gimbal</strong><a class="headerlink" href="#controlling-the-gimbal" title="Permanent link">&para;</a></h2>
+<p>The gimbal pitch and yaw angles can be controled by the ros2 messages <code>/robot_&lt;ID&gt;/gimbal/desired_gimbal_pitch</code> and <code>/robot_&lt;ID&gt;/gimbal/desired_gimbal_yaw</code> of type <code>std_msgs/msg/Float64</code>, respectively.</p>
 
 
 
@@ -2866,7 +2962,7 @@ Ideally in the future we will use a proper waypoint manager.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../takeoff_landing_planner/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Takeoff Landing Planner">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2876,20 +2972,20 @@ Ideally in the future we will use a proper waypoint manager.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Takeoff Landing Planner
+                Index
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../../../../../docs/robot/autonomy/3_local/controls/" class="md-footer__link md-footer__link--next" aria-label="Next: Controls">
+          <a href="../../2_perception/" class="md-footer__link md-footer__link--next" aria-label="Next: Perception">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Controls
+                Perception
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2948,10 +3044,10 @@ Ideally in the future we will use a proper waypoint manager.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../../../../..", "features": ["navigation.indexes", "navigation.path", "navigation.tabs", "navigation.footer", "navigation.top", "navigation.sections", "search.highlight", "search.suggest", "toc.integrate", "toc.follow", "content.code.copy"], "search": "../../../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.indexes", "navigation.path", "navigation.tabs", "navigation.footer", "navigation.top", "navigation.sections", "search.highlight", "search.suggest", "toc.integrate", "toc.follow", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
